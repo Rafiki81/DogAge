@@ -3,7 +3,6 @@ package com.example.dogage
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
@@ -37,11 +36,12 @@ class MainActivity : AppCompatActivity() {
                 val ageInt = ageString.toInt()
                 val result = ageInt * 7
                 resultText.text = getString(R.string.result_text,result)
-            }else{
+            } else {
                 Log.d("MainActivity","Age string is empty")
                 Toast.makeText(this,"Debes insertar una Edad",Toast.LENGTH_SHORT).show()
             }
 
         }
+
     }
 }
